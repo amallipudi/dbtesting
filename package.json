@@ -1,28 +1,26 @@
 {
-  "name": "cypressautomation",
+  "name": "cypress-junit-azure-devops",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cypress-ntlm open"
+    "electron-test": "cypress run",
+    "postelectron-test": "jrm ./results/combined-report.xml \"./results/results-*.xml\"",
+    "script-electron": "npm run electron-test || npm run postelectron-test",
+    "chrome-test": "cypress run --browser chrome --headless",
+    "postchrome-test": "jrm ./results/combined-report.xml \"./results/results-*.xml\"",
+    "script-chrome": "npm run chrome-test || npm run postchrome-test",
+    "firefox-test": "cypress run --browser firefox --headless",
+    "postfirefox-test": "jrm ./results/combined-report.xml \"./results/results-*.xml\"",
+    "script-firefox": "npm run firefox-test || npm run postfirefox-test"
   },
-  "author": "gauravs",
-  "license": "ISC",
+  "keywords": [],
+  "author": "QA BOX LET'S TEST<qaboxletstest@gmail.com>",
+  "license": "MIT",
   "dependencies": {
-    "cypress-file-upload": "^5.0.8",
-    "jsonpath": "^1.1.1",
-    "popper.js": "^1.16.1"
+    "cypress": "^8.3.0"
   },
   "devDependencies": {
-    "cypress": "^12.8.1",
-    "cypress-iframe": "^1.0.1",
-    "cypress-mochawesome-reporter": "^3.3.0",
-    "cypress-ntlm-auth": "^4.1.2",
-    "cypress-sql-server": "^1.0.0",
-    "cypress-xpath": "^2.0.1",
-    "mocha-junit-reporter": "^2.2.1",
-    "mssql": "^9.1.1",
-    "mysql": "^2.18.1",
-    "node-xlsx": "^0.4.0"
+    "junit-report-merger": "^3.0.1"
   }
 }
