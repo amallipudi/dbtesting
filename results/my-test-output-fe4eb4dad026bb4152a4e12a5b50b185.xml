@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.696" tests="2" failures="1">
+  <testsuite name="Root Suite" timestamp="2023-10-20T06:06:34" tests="0" file="cypress\e2e\FEEDSTOCKFULL\FeedStock\Publisher1.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Publisher" timestamp="2023-10-20T06:06:34" tests="2" time="0.664" failures="1">
+    <testcase name="Publisher &quot;before each&quot; hook for &quot;AddNewDeal_button is disabled&quot;" time="0.000" classname="&quot;before each&quot; hook for &quot;AddNewDeal_button is disabled&quot;">
+      <failure message="The cypress-ntlm-auth plugin must be loaded before using this method
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Publisher`" type="Error"><![CDATA[Error: The cypress-ntlm-auth plugin must be loaded before using this method
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Publisher`
+    at Context.ntlm (webpack:///./node_modules/cypress-ntlm-auth/dist/commands/index.js:35:0)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

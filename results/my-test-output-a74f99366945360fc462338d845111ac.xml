@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.477" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2023-10-20T06:04:55" tests="0" file="cypress\e2e\FEEDSTOCKFULL\FeedStock\Data.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Data Driven testing using Excel File" timestamp="2023-10-20T06:04:55" tests="1" time="0.445" failures="1">
+    <testcase name="Data Driven testing using Excel File &quot;before each&quot; hook for &quot;Data Driven: Add new Deal&quot;" time="0.000" classname="&quot;before each&quot; hook for &quot;Data Driven: Add new Deal&quot;">
+      <failure message="`cy.task(&apos;readXlsx&apos;)` failed with the following error:
+
+The &apos;task&apos; event has not been registered in the setupNodeEvents method. You must register it before using cy.task()
+
+Fix this in your setupNodeEvents method here:
+C:\Users\amallipudi\Desktop\DBtesting\cypress.config.js
+
+https://on.cypress.io/api/task
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Data Driven testing using E...`" type="CypressError"><![CDATA[CypressError: `cy.task('readXlsx')` failed with the following error:
+
+The 'task' event has not been registered in the setupNodeEvents method. You must register it before using cy.task()
+
+Fix this in your setupNodeEvents method here:
+C:\Users\amallipudi\Desktop\DBtesting\cypress.config.js
+
+https://on.cypress.io/api/task
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `Data Driven testing using E...`
+    at <unknown> (http://localhost:59590/__cypress/runner/cypress_runner.js:141549:80)
+    at tryCatcher (http://localhost:59590/__cypress/runner/cypress_runner.js:8914:23)
+    at Promise._settlePromiseFromHandler (http://localhost:59590/__cypress/runner/cypress_runner.js:6849:31)
+    at Promise._settlePromise (http://localhost:59590/__cypress/runner/cypress_runner.js:6906:18)
+    at Promise._settlePromise0 (http://localhost:59590/__cypress/runner/cypress_runner.js:6951:10)
+    at Promise._settlePromises (http://localhost:59590/__cypress/runner/cypress_runner.js:7027:18)
+    at _drainQueueStep (http://localhost:59590/__cypress/runner/cypress_runner.js:3621:12)
+    at _drainQueue (http://localhost:59590/__cypress/runner/cypress_runner.js:3614:9)
+    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://localhost:59590/__cypress/runner/cypress_runner.js:3630:5)
+    at Async.drainQueues (http://localhost:59590/__cypress/runner/cypress_runner.js:3500:14)
+From Your Spec Code:
+    at Context.eval (webpack:///./cypress/e2e/FEEDSTOCKFULL/FeedStock/Data.cy.js:6:15)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.377" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2023-10-20T06:04:11" tests="0" file="cypress\e2e\Pulses\PULSES_Contract_Application.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="PULSES CONTRACT Application" timestamp="2023-10-20T06:04:11" tests="1" time="0.359" failures="1">
+    <testcase name="PULSES CONTRACT Application &quot;before each&quot; hook for &quot;PULSES CONTRACT Application&quot;" time="0.000" classname="&quot;before each&quot; hook for &quot;PULSES CONTRACT Application&quot;">
+      <failure message="The cypress-ntlm-auth plugin must be loaded before using this method
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `PULSES CONTRACT Application`" type="Error"><![CDATA[Error: The cypress-ntlm-auth plugin must be loaded before using this method
+
+Because this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `PULSES CONTRACT Application`
+    at Context.ntlm (webpack:///./node_modules/cypress-ntlm-auth/dist/commands/index.js:35:0)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>
