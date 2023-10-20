@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="64.403" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2023-10-20T07:05:21" tests="0" file="cypress\e2e\FEEDSTOCKFULL\ASSERTIONSFEEDSTOCK.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="FEEDSTOCK CONTRACT Application" timestamp="2023-10-20T07:05:21" tests="1" time="64.385" failures="1">
+    <testcase name="FEEDSTOCK CONTRACT Application FEEDSTOCK CONTRACT Application" time="0.000" classname="FEEDSTOCK CONTRACT Application">
+      <failure message="Timed out retrying after 4000ms: expected &apos;Feedstock Contract Management | Error&apos; to equal &apos;Feedstock Contract Management | Manage Deal&apos;" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: expected 'Feedstock Contract Management | Error' to equal 'Feedstock Contract Management | Manage Deal'
+    at Context.eval (webpack://cypress-junit-azure-devops/./cypress/e2e/FEEDSTOCKFULL/ASSERTIONSFEEDSTOCK.cy.js:10:15)
+
+      + expected - actual
+
+      -'Feedstock Contract Management | Error'
+      +'Feedstock Contract Management | Manage Deal'
+      ]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

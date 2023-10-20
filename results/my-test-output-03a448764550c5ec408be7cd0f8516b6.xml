@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="91.876" tests="2" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-10-20T07:28:14" tests="0" file="cypress\e2e\FEEDSTOCKFULL\FeedStock\Trader.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Trader" timestamp="2023-10-20T07:28:14" tests="2" time="91.851" failures="0">
+    <testcase name="Trader check all mandatory fields" time="46.308" classname="check all mandatory fields">
+    </testcase>
+    <testcase name="Trader save_button" time="39.565" classname="save_button">
+    </testcase>
+  </testsuite>
+</testsuites>

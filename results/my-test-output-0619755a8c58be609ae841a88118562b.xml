@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="45.682" tests="2" failures="2">
+  <testsuite name="Root Suite" timestamp="2023-10-20T07:26:51" tests="0" file="cypress\e2e\FEEDSTOCKFULL\FeedStock\Publisher1.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Publisher" timestamp="2023-10-20T07:26:51" tests="2" time="45.656" failures="2">
+    <testcase name="Publisher AddNewDeal_button is disabled" time="0.000" classname="AddNewDeal_button is disabled">
+      <failure message="Timed out retrying after 4000ms: Expected to find element: `#lnkbtnAdd`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find element: `#lnkbtnAdd`, but never found it.
+    at Context.myFunction (webpack://cypress-junit-azure-devops/./cypress/e2e/FEEDSTOCKFULL/FeedStock/Publisher1.cy.js:13:25)]]></failure>
+    </testcase>
+    <testcase name="Publisher Actions_feature" time="0.000" classname="Actions_feature">
+      <failure message="Timed out retrying after 4000ms: Expected to find element: `#lnkbtnAdd`, but never found it." type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: Expected to find element: `#lnkbtnAdd`, but never found it.
+    at Context.myFunction (webpack://cypress-junit-azure-devops/./cypress/e2e/FEEDSTOCKFULL/FeedStock/Publisher1.cy.js:25:29)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

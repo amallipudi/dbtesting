@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="67.259" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2023-10-20T07:13:54" tests="0" file="cypress\e2e\KYC\NEW_CUSTOMER_REQUEST.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="NEW CUSTOMER REQUEST" timestamp="2023-10-20T07:13:54" tests="1" time="67.238" failures="1">
+    <testcase name="NEW CUSTOMER REQUEST NEW CUSTOMER REQUEST SAVE AS DAFRT &amp; SUBMIT " time="0.000" classname="NEW CUSTOMER REQUEST SAVE AS DAFRT &amp; SUBMIT ">
+      <failure message="Timed out retrying after 4000ms: expected &apos;&lt;span&gt;&apos; to have text &apos;Request Submitted Successfully&apos;, but the text was &apos;Please approve KYC and then submit the request.&apos;" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: expected '<span>' to have text 'Request Submitted Successfully', but the text was 'Please approve KYC and then submit the request.'
+    at Context.eval (webpack://cypress-junit-azure-devops/./cypress/e2e/KYC/NEW_CUSTOMER_REQUEST.cy.js:67:42)
+
+      + expected - actual
+
+      -'Please approve KYC and then submit the request.'
+      +'Request Submitted Successfully'
+      ]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

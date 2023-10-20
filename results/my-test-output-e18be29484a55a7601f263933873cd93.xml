@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="79.720" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-10-20T07:12:21" tests="0" file="cypress\e2e\KYC\customerASSERTIONS.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="NEW CUSTOMER REQUEST" timestamp="2023-10-20T07:12:21" tests="1" time="79.697" failures="0">
+    <testcase name="NEW CUSTOMER REQUEST NEW CUSTOMER REQUEST SAVE AS DAFRT &amp; SUBMIT " time="67.717" classname="NEW CUSTOMER REQUEST SAVE AS DAFRT &amp; SUBMIT ">
+    </testcase>
+  </testsuite>
+</testsuites>

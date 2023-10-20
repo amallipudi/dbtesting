@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="246.842" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2023-10-20T06:56:00" tests="1" file="cypress\e2e\FEEDSTOCKFULL\FeedStock\Launchbrowser.cy.js" time="246.835" failures="1">
+    <testcase name="google test" time="0.000" classname="google test">
+      <failure message="Timed out retrying after 4000ms: The command was expected to run against origin `https://hcm47.sapsf.com` but the application is at origin `https://login.microsoftonline.com`.
+
+This commonly happens when you have either not navigated to the expected origin or have navigated away unexpectedly.
+
+Using `cy.origin()` to wrap the commands run on `https://login.microsoftonline.com` will likely fix this issue.
+
+`cy.origin(&apos;https://login.microsoftonline.com&apos;, () =&gt; {`
+`  &lt;commands targeting https://login.microsoftonline.com go here&gt;`
+`})`
+
+https://on.cypress.io/cy-visit-succeeded-but-commands-fail" type="CypressError"><![CDATA[CypressError: Timed out retrying after 4000ms: The command was expected to run against origin `https://hcm47.sapsf.com` but the application is at origin `https://login.microsoftonline.com`.
+
+This commonly happens when you have either not navigated to the expected origin or have navigated away unexpectedly.
+
+Using `cy.origin()` to wrap the commands run on `https://login.microsoftonline.com` will likely fix this issue.
+
+`cy.origin('https://login.microsoftonline.com', () => {`
+`  <commands targeting https://login.microsoftonline.com go here>`
+`})`
+
+https://on.cypress.io/cy-visit-succeeded-but-commands-fail
+    at cypressErr (https://hcm47.sapsf.com/__cypress/runner/cypress_runner.js:75187:18)
+    at Object.errByPath (https://hcm47.sapsf.com/__cypress/runner/cypress_runner.js:75242:10)
+    at Object.commandCanCommunicateWithAUT (https://hcm47.sapsf.com/__cypress/runner/cypress_runner.js:144477:90)
+    at <unknown> (https://hcm47.sapsf.com/__cypress/runner/cypress_runner.js:131462:22)
+    at Object.subjectFn (https://hcm47.sapsf.com/__cypress/runner/cypress_runner.js:143314:16)
+    at $Cy.verifyUpcomingAssertions (https://hcm47.sapsf.com/__cypress/runner/cypress_runner.js:142658:31)
+    at onRetry (https://hcm47.sapsf.com/__cypress/runner/cypress_runner.js:143305:15)
+    at tryCatcher (https://hcm47.sapsf.com/__cypress/runner/cypress_runner.js:1807:23)
+    at Promise.attempt.Promise.try (https://hcm47.sapsf.com/__cypress/runner/cypress_runner.js:4315:29)
+    at whenStable (https://hcm47.sapsf.com/__cypress/runner/cypress_runner.js:143192:68)
+    at <unknown> (https://hcm47.sapsf.com/__cypress/runner/cypress_runner.js:143133:14)
+    at tryCatcher (https://hcm47.sapsf.com/__cypress/runner/cypress_runner.js:1807:23)
+    at Promise._settlePromiseFromHandler (https://hcm47.sapsf.com/__cypress/runner/cypress_runner.js:1519:31)
+    at Promise._settlePromise (https://hcm47.sapsf.com/__cypress/runner/cypress_runner.js:1576:18)
+    at Promise._settlePromise0 (https://hcm47.sapsf.com/__cypress/runner/cypress_runner.js:1621:10)
+    at Promise._settlePromises (https://hcm47.sapsf.com/__cypress/runner/cypress_runner.js:1701:18)
+    at Promise._fulfill (https://hcm47.sapsf.com/__cypress/runner/cypress_runner.js:1645:18)
+    at <unknown> (https://hcm47.sapsf.com/__cypress/runner/cypress_runner.js:5450:46)
+From Your Spec Code:
+    at Context.eval (webpack://cypress-junit-azure-devops/./cypress/e2e/FEEDSTOCKFULL/FeedStock/Launchbrowser.cy.js:14:37)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

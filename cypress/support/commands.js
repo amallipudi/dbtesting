@@ -25,24 +25,3 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 import "cypress-ntlm-auth/dist/commands";
-
-import "cypress-file-upload";
-
-import sqlServer from 'cypress-sql-server';
-sqlServer.loadDBCommands();
-
-Cypress.Commands.add("parseXlsx", (inputFile) => {
-
-    return cy.task('parseXlsx', {filepath: inputFile})
-});
-
-Cypress.Commands.add("queryDb", (query) => {
-    cy.task("queryDb", query);
-  });
-
-  require('cypress-xpath');
-  import 'cypress-file-upload'
-  import 'cypress-iframe';
-
-
- 
