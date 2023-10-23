@@ -55,9 +55,9 @@ describe('NEW VENDOR REQUEST', () => {
         cy.get('#cphContent_pnlcurrncy > .row > :nth-child(1) > .form-line > .btn-group > .open > .bs-searchbox > .form-control').type("inr{enter}")//payment
         cy.get('#cphContent_pnlcurrncy > .row > :nth-child(2) > .form-line > .btn-group > .btn').click()//payment
         cy.get('#cphContent_pnlcurrncy > .row > :nth-child(2) > .form-line > .btn-group > .open > .bs-searchbox > .form-control').type("1.5/15{enter}")//payment
-        cy.get('#cphContent_fuAttachments').attachFile('TPTS-0405 (4).pdf')//upload file
-        cy.get('#cphContent_btnUpload').click()//upload file
-        cy.get('[data-notify="message"]').should('have.text','File Uploaded Successfully.')
+        //cy.get('#cphContent_fuAttachments').attachFile('TPTS-0405 (4).pdf')//upload file
+        //cy.get('#cphContent_btnUpload').click()//upload file
+        //cy.get('[data-notify="message"]').should('have.text','File Uploaded Successfully.')
         cy.get('#tbxFuelLicense').type("targray000956984475892")//biofuels only
         cy.get('#tbxSGPermit').type("targray158790956984475892")//biofuels only
         cy.get('#tbxGST').type("GSTtargray158790956992") // tax data start

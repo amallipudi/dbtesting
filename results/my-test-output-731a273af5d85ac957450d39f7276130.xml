@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="62.839" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-10-20T10:24:49" tests="0" file="cypress\e2e\BIOUS\Bio_us _diff.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="BIOUS MARKET DIFFRENTIAL DATA ENTRY APP" timestamp="2023-10-20T10:24:49" tests="1" time="62.837" failures="0">
+    <testcase name="BIOUS MARKET DIFFRENTIAL DATA ENTRY APP BIOUS MARKET DIFFRENTIAL DATA ENTRY  for testing " time="55.528" classname="BIOUS MARKET DIFFRENTIAL DATA ENTRY  for testing ">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="42.315" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-10-20T10:27:29" tests="0" file="cypress\e2e\FEEDSTOCKFULL\FeedStock\Home.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Home" timestamp="2023-10-20T10:27:29" tests="3" time="42.312" failures="0">
+    <testcase name="Home Check &quot;Verify Home Page" time="14.072" classname="Check &quot;Verify Home Page">
+    </testcase>
+    <testcase name="Home Check &quot;Add New Deal_BUtton&quot; Visible" time="10.034" classname="Check &quot;Add New Deal_BUtton&quot; Visible">
+    </testcase>
+    <testcase name="Home Check &quot;Add New Deal_BUtton&quot; Enable" time="10.936" classname="Check &quot;Add New Deal_BUtton&quot; Enable">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="66.116" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2023-10-20T10:25:22" tests="1" file="cypress\e2e\FEEDSTOCKFULL\FeedStock\Launchbrowser.cy.js" time="66.115" failures="1">
+    <testcase name="google test" time="0.000" classname="google test">
+      <failure message="Timed out after waiting `60000ms` for your remote page to load.
+
+Your page did not fire its `load` event within `60000ms`.
+
+You can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.
+
+Browsers will not fire the `load` event until all stylesheets and scripts are done downloading.
+
+When this `load` event occurs, Cypress will continue running commands." type="CypressError"><![CDATA[CypressError: Timed out after waiting `60000ms` for your remote page to load.
+
+Your page did not fire its `load` event within `60000ms`.
+
+You can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.
+
+Browsers will not fire the `load` event until all stylesheets and scripts are done downloading.
+
+When this `load` event occurs, Cypress will continue running commands.
+    at timedOutWaitingForPageLoad (https://hcm47.sapsf.com/__cypress/runner/cypress_runner.js:130256:64)
+    at <unknown> (https://hcm47.sapsf.com/__cypress/runner/cypress_runner.js:130554:16)
+    at tryCatcher (https://hcm47.sapsf.com/__cypress/runner/cypress_runner.js:1807:23)
+    at <unknown> (https://hcm47.sapsf.com/__cypress/runner/cypress_runner.js:4186:41)
+    at tryCatcher (https://hcm47.sapsf.com/__cypress/runner/cypress_runner.js:1807:23)
+    at Promise._settlePromiseFromHandler (https://hcm47.sapsf.com/__cypress/runner/cypress_runner.js:1519:31)
+    at Promise._settlePromise (https://hcm47.sapsf.com/__cypress/runner/cypress_runner.js:1576:18)
+    at Promise._settlePromise0 (https://hcm47.sapsf.com/__cypress/runner/cypress_runner.js:1621:10)
+    at Promise._settlePromises (https://hcm47.sapsf.com/__cypress/runner/cypress_runner.js:1697:18)
+    at _drainQueueStep (https://hcm47.sapsf.com/__cypress/runner/cypress_runner.js:2407:12)
+    at _drainQueue (https://hcm47.sapsf.com/__cypress/runner/cypress_runner.js:2400:9)
+    at Async._drainQueues (https://hcm47.sapsf.com/__cypress/runner/cypress_runner.js:2416:5)
+    at Async.drainQueues (https://hcm47.sapsf.com/__cypress/runner/cypress_runner.js:2286:14)
+From Your Spec Code:
+    at Context.eval (webpack://cypress-junit-azure-devops/./cypress/e2e/FEEDSTOCKFULL/FeedStock/Launchbrowser.cy.js:14:37)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

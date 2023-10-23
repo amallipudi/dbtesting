@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="16.036" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2023-10-20T10:37:07" tests="0" file="cypress\e2e\Pulses\PULSES_Contract_Application.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="PULSES CONTRACT Application" timestamp="2023-10-20T10:37:07" tests="1" time="16.031" failures="1">
+    <testcase name="PULSES CONTRACT Application PULSES CONTRACT Application" time="0.000" classname="PULSES CONTRACT Application">
+      <failure message="cy.xpath is not a function" type="TypeError"><![CDATA[TypeError: cy.xpath is not a function
+    at Context.eval (webpack://cypress-junit-azure-devops/./cypress/e2e/Pulses/PULSES_Contract_Application.cy.js:44:4)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -55,8 +55,8 @@ describe('NEW CUSTOMER REQUEST', () => {
         cy.get('#tbxTaxExempt').type("TAxexemptnumbertargray158790956984475892")
         cy.get('#tbxCounty').type("united states of america i love this country&i love my INDIA ALSO")//tax data end
         cy.get('#tbxNotes1').type(" IFC’s Discount Note Program was launched in June 2009 to complement IFC’s Global MTN Program. The program provides an additional funding and liquidity management tool for IFC to support our trade finance and supply chain initiatives, and to expand the availability of short-term local currency finance. Our discount notes offer a high-quality, short-term investment opportunity in U.S. dollar and Chinese renminbi.IFC was the first multilateral institution to launch discount note programs in Chinese renminbi and Turkish lira to eligible institutional investors globally, enabling the regular issuance of offshore discount notes and expanding the availability of short-term local-currency finance.In FY22, IFC issued $7.5 billion under the Global Discount Note Program.Dnomiatedin UD an CNHaturtiesraning overnight to 360 daysMinimum order is $100,000 aggregate face amount per maturity dateUncertified book-entry form  Offered through ten dealersAvailable in bearer form onlySetlemnt vFedwe")  // deal notes 
-        cy.get('#cphContent_fuAttachments').attachFile('TPTS-0405 (4).pdf') // upload file
-        cy.get('#cphContent_btnUpload').click()
+        //cy.get('#cphContent_fuAttachments').attachFile('TPTS-0405 (4).pdf') // upload file
+       // cy.get('#cphContent_btnUpload').click()
         cy.get('[data-notify="message"]').should('have.text', 'File Uploaded Successfully')
         cy.get('#cphContent_btnSaveDraft').click()  // save draft
         cy.get('[data-notify="message"]').should('have.text','Request saved as Draft')

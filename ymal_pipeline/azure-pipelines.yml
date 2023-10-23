@@ -1,0 +1,58 @@
+pool:
+   name: Azure Pipelines
+   vmImage: windows-latest
+trigger:
+ - none
+steps:
+ -powershell:
+     $var = (gci env:*).GetEnumerator() | Sort-Object Name
+     $OUT = ""
+     Foreach ($v in $var) {$out = $out +"'t{0,-28} = {1,28}'n" -f $v.Name, @v.Value}
+
+     write-output "dump variables on $env:BUILD_ARTIFACTSTAGINGDIRECTORY\test.md"
+     $fileName = "$env:BUILD_ARTIFACTSTAGINGDIRECTORY\test.md"
+     set-content $fileName $out
+
+     write-output "##vso[task.addattachment type=Distributedtask.core.Summary;name=Environment Variables;]$fileName"
+  displayName: "Publish all build variables"
+
+
+- task: NodeTool@0
+  displayName: 'Use Node 14.x'
+  inputs:
+    versionSpec: 14.x
+
+
+- task: Npm@1
+   displayName: 'npm install'
+   inputs:
+     workingDir: '$(System.DefaultWorkingDirectory)/_amallipudi_dbtesting'
+     verbose: false
+
+  -script: "npm run cy:verify"
+   customCommand: 'Cypress Verify'
+
+  -script: "npm run cy:reporter"
+   customCommand: 'Run Cypress tests'
+
+  -task: PublishBuildArtifacts@1
+  displayName: "Publish Artifact: cypresss-and-azure-devops Screenshorts"
+  inputs: 
+    PathtoPublish: cypress/screenshprts
+    ArtifactName: CypressAndAzureDevopsTestRunScreenshorts
+  condition: SucceededOrFailed()
+
+  -task: PublishBuildArtifacts@1
+  displayName: "Publish Artifact: cypresss-and-azure-devops Videos"
+  inputs: 
+    PathtoPublish: cypress/videos
+    ArtifactName: CypressAndAzureDevopsTestRunVideos
+  condition: SucceededOrFailed()
+
+  -task: PublishTestResults@2
+  displayName: "Publish Test Results"
+  condition: SucceededOrFailed()
+  inputs: 
+     testResultsFormat: "junit"
+     testResultsFiles: "**DBtesting-*.xml"
+    
