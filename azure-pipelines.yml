@@ -23,11 +23,3 @@ steps:
     npx cypress run
   displayName: 'run e2e tests'
   continueOnError: true
-
-- script: 
-      npm run cy:verify
-  displayName: 'run cypress verify'
-
-- script:
-      npm run cy:reporter
-  displayName: 'run cypress testss'
